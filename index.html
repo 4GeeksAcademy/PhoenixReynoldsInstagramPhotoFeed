@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!--code to run site: -->
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/insta.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container"> <!-- entire website -->
+        <div> <!--top bar-->
+            <div class="container bg-light text-black">
+                <div class="row">
+                  <div class="col-lg-9 d-flex"> <!--Logo and name-->
+                    <i class="fa-brands fa-instagram h2 me-2 my-1"></i><h4 class="my-1">Instagram</h4>
+                  </div>
+                  <div class="col-lg-2"> <!--Create a post button-->
+                    <button type="button" class="btn btn-success btn-sm py-1 my-1" data-bs-toggle="modal" data-bs-target="#instamodal">Create a post</button>
+                  </div>
+                  <div class="col-lg-1"> <!--Dropdown menu-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-sm py-1 my-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accessability</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div> <!--Page tabs-->
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="zoom-tab" data-bs-toggle="tab" data-bs-target="#zoom" type="button" role="tab" aria-controls="zoom" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab"> <!--GRID-->
+                  <div class="container">
+                    <div class="row g-1 mb-1"> <!--Row 1-->
+                      <div class="col-lg-4">
+                        <img src="/images/alien.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/coworker.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/slug.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                    </div>
+                    <div class="row g-1 mb-1"> <!--Row 2-->
+                      <div class="col-lg-4">
+                        <img src="/images/reginald.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/daredevil.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/literallyme.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                    </div>
+                    <div class="row g-1 mb-1"> <!--Row 3-->
+                      <div class="col-lg-4">
+                        <img src="/images/dalerstronaut.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/dorncog.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="/images/refchush.png" class="img-fluid w-100" style="aspect-ratio: 1/1; object-fit: cover;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="zoom" role="tabpanel" aria-labelledby="zoom-tab"> <!--ZOOM-->
+                  <div class="w-50 mx-auto my-3"> <!--post cell-->
+                    <div class="d-flex justify-content-between align-items-center border border-1"> <h3 class="ms-2">My weekly training</h3> <p class="me-2">05/05/2025</p> </div> <!--title/date-->
+                    <div> <img src="/images/literallyme.png" class="img-fluid w-100"> </div> <!--img-->
+                    <div class="border border-1"> <h6 class="strong mx-2 my-1">42,069 Likes</h6> <p class="mx-2">This is just a picture from my average training day lol. Didn't even know the camera was on...</p> </div> <!--likes/desc-->
+                  </div>
+                  <div class="w-50 mx-auto my-3"> <!--daredevil post cell-->
+                    <div class="d-flex justify-content-between align-items-center border border-1"> <h3 class="ms-2">Blammo Buttsworth's last ride</h3> <p class="me-2">04/09/1944</p> </div> <!--title/date-->
+                    <div> <img src="/images/daredevil.png" class="img-fluid w-100"> </div> <!--img-->
+                    <div class="border border-1"> <h6 class="strong mx-2 my-1">10,064,732 Likes</h6> <p class="mx-2">Blammo Buttsworth, clad in a ketchup-stained cape and duct-taped helmet, soars through the air mid-fart. The crowd gasps as he attempts the legendary Quadruple Flatulent Corkscrew—a stunt long banned in three counties. Behind him, a hazy trail of regret and methane. Ahead, only gravity and destiny. This was the last ride of the man who lived large, laughed louder, and always lit the fuse with his rear.
+                    </p> </div> <!--likes/desc-->
+                  </div>
+                  <div class="w-50 mx-auto my-3"> <!--slug post cell-->
+                    <div class="d-flex justify-content-between align-items-center border border-1"> <h3 class="ms-2">Sapient Slugs?</h3> <p class="me-2">04/05/2025</p> </div> <!--title/date-->
+                    <div> <img src="/images/slug.png" class="img-fluid w-100"> </div> <!--img-->
+                    <div class="border border-1"> <h6 class="strong mx-2 my-1">2,408,377,012 Likes</h6> <p class="mx-2">MEXICO CITY — In a stunning turn of events, a species of slug native to Mexico has spontaneously developed the ability to communicate verbally with humans, baffling scientists and delighting locals. Dubbed Babosa Sapiente, the cheerful gastropods have embraced Mexican culture with gusto, rapidly learning Spanish, developing a taste for salsa verde, and forming mariachi bands with tiny handcrafted instruments. Researchers remain stunned by the speed of their cultural assimilation, with one biologist noting, “They skipped tool use and went straight to karaoke.”</p> </div> <!--likes/desc-->
+                  </div>
+                  <div class="w-50 mx-auto my-3"> <!--reginald post cell-->
+                    <div class="d-flex justify-content-between align-items-center border border-1"> <h3 class="ms-2">Ser Reginald</h3> <p class="me-2">25/03/2022</p> </div> <!--title/date-->
+                    <div> <img src="/images/reginald.png" class="img-fluid w-100"> </div> <!--img-->
+                    <div class="border border-1"> <h6 class="strong mx-2 my-1">16 Likes</h6> <p class="mx-2">Ser Reginald, the Knight of Cheese, was a valorous mouse of humble dairy-farm origins, knighted after single-handedly repelling a raccoon siege on the Kingdom of Cheddarshire. Wielding the legendary blade Gouda’s Edge and clad in armor forged from aged parmesan, he led the Rodent Crusades of 1487, securing diplomatic cheese treaties with the hamsters of Brieholm and defending the sacred Fondue Springs from feline incursion. Though lost in the Great Grater Collapse of 1492, his legacy lives on in the Order of the Rind, and in murals where his noble whiskers flutter eternally in the wind.</p> </div> <!--likes/desc-->
+                  </div>
+                  <div class="w-50 mx-auto my-3"> <!--daler post cell-->
+                    <div class="d-flex justify-content-between align-items-center border border-1"> <h3 class="ms-2">Mendhi in Space!</h3> <p class="me-2">08/03/2025</p> </div> <!--title/date-->
+                    <div> <img src="/images/dalerstronaut.png" class="img-fluid w-100"> </div> <!--img-->
+                    <div class="border border-1"> <h6 class="strong mx-2 my-1">674,288 Likes</h6> <p class="mx-2">Congratulations to Daler Mehndi on completing his astronaut training. Known for his vibrant contributions to Indian pop music, Mehndi has now ventured into the realm of space exploration. His transition from the stage to space exemplifies a remarkable blend of artistic passion and scientific pursuit. This achievement not only marks a personal milestone but also serves as an inspiration for many, highlighting the limitless possibilities when dedication meets ambition.</p> </div> <!--likes/desc-->
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="modal fade" id="instamodal" tabindex="-1" aria-labelledby="instamodalLabel" aria-hidden="true"> <!--Modal Code-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="instamodalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div> <!--caption-->
+              <h6>Caption:</h6>
+              <textarea class="form-control py-1" rows="5" placeholder="Type your caption here..."></textarea>
+              <div class="pt-3"> <!--modal buttons-->
+                <div class="row gx-1">
+                  <div class="col-1">
+                    <button type="button" class="btn btn-secondary btn-sm w-100">
+                      <i class="fa-solid fa-camera-retro"></i>
+                    </button>
+                  </div>
+                  <div class="col-1">
+                    <button type="button" class="btn btn-secondary btn-sm w-100">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
